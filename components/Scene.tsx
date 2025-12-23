@@ -193,6 +193,8 @@ const PlatonicSolid: React.FC<{
         position={position}
         onPointerEnter={() => onHover(type)}
         onPointerLeave={onHoverLeave}
+        onClick={() => onHover(type)}
+        onPointerDown={() => onHover(type)}
         geometry={geometry}
       >
         <MeshPhysicalMaterial 
